@@ -1,5 +1,6 @@
 from graphics_pa_gui import *
 import sys
+import pi_hat_tool_dice
 
 try:
     opening_menu = window_pa.create_window_pa("opening_menu", "pauls pi hat",
@@ -30,7 +31,8 @@ except:
     sys.exit()
 
 if five_button_select == 0:
-    print("dice")
+    pi_hat_tool_dice.roll_dice
+    
 if five_button_select == 1:
     print("display")
 if five_button_select == 2:
